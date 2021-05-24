@@ -6,39 +6,36 @@
     <meta name="viewport" content="width=hey, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #a
+        #header
         {
         height:130px;
         border-style:solid;
         border-color:black;
         }
 
-        #b
+        #marquee
         {
-        height:25px;
+        height:20px;
         border-color:greenyellow;
         background-color:greenyellow;
         }
 
-        #c
+        #menu
         {    
-        height:40px;
+        height:30px;
         border-style:solid;
-        border-color:lightskyblue;
-        background-color:lightskyblue;
+        border-color:yellow;
+        background-color:yellow;
         font-size:8px;
         text-align:center;
-        padding-top:2px;
-        padding-bottom:2px;
-        padding-right:2px;
-        padding-left:2px;
+        padding-bottom:10px;
         }
 
 ul li
 {
-    text-align: center;
+text-align: center;
 font-size:22px;
-color:red;
+color:darkgreen;
 font-family:serif;
 margin-bottom:5px;
 padding-top:2px;
@@ -47,6 +44,12 @@ padding-right:2px;
 padding-left:2px;
 display:inline-block;
 list-style-type:none;
+}
+
+ul li a
+{
+    text-decoration:none;
+    color:orangered;
 }
 
 ul li a:hover
@@ -61,55 +64,65 @@ text-decoration:none;
 color:#fff;
 }
 
-       #d
+       #slider
         {
         height:250px;
         border-style:solid;
         border-color:black;
         }
 
-        #e
+        #leftbuttons
         {
-        height:400px;
+        height:600px;
         width:25%;
         float:left;
         border-style:solid;
         border-color:black;
         }
 
-        #f
+        #noticeboard
         {
-        height:400px;
+        height:600px;
         width:25%;
         float:right;
         border-style:solid;
-        border-color:black;
-        }
-
-        #g
+        border-color:honeydew;
+        background-color:honeydew;
+        }  
+        marquee a
         {
-        height:400px;
+            text-decoration:none;
+            color:green;
+            background-color:yellow;
+        }
+        marquee a:hover
+        {
+            color:red;
+        }
+        #about
+        {
+        height:600px;
         width:49%;
         border-style:solid;
         border-color:black;
         margin-left:25.1%;
         }
 
-        #h
+        #optional
         {
         height:80px;
         border-style:solid;
         border-color:black;
         }
 
-        #i
+        #photogallery
         {
         height:200px;
         border-style:solid;
         border-color:black;
         }
 
-        #j
+        #footer
         {
         height:130px;
         border-style:solid;
@@ -119,13 +132,13 @@ color:#fff;
         </style>
 </head>
 <body>
-    <div id="a">
+    <div id="header">
         header
     </div>
-        <div id="b">
+        <div id="marquee">
             <marquee behavior="scroll" scrollamount="13" loop="infinite" direction="left" style="color:red" font size="30px"><i><b>!!! WELCOME TO A.B.UNIVERSITY !!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!!! THANKS FOR VISITING !!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!!! VISIT US AGAIN !!!</b></i></marquee>
         </div>
-        <div id="c">
+        <div id="menu">
                 <ul><b>
                 <li><a href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li><a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
@@ -135,25 +148,62 @@ color:#fff;
                 <li><a href="#">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 </b></ul>
         </div>
-       <div id="d">
+       <div id="slider">
            slider
        </div> 
-       <div id="e">
+       <div id="leftbuttons">
            left buttons
        </div>
-       <div id="f">
-           notice board
+       <div id="noticeboard">
+        <h2 style="background-color:greenyellow;color:red;text-align:center;padding:3px;">NOTICES AND EVENTS</h2>
+           <marquee behavior="scroll" scrollamount="1.5" loop="infinite" direction="up" height="200px">
+           <a href="#">Datesheet of End Term Examination (ONLINE MODE) of MCA in School of Computer Science (MCA session 2020) </a><br><br>
+           <a href="#">Invitation for 15 Days online Yoga Camp organized by the Yog Dhara Club</a><br><br>
+           <a href="#">Reappear Exam Result of 2nd Sem M.Sc Environmental Sciences (Academic Year 2020-2021), December 2020 held in January 2021</a><br><br>
+           <a href="#">Time Table for online classes of 2nd Semester MA (New Media)</a><br><br>
+           <a href="#">Online Documentation Verification of Provisionally addmitted students for Admission to MBA</a><br><br>
+           <a href="#">Notice for submission of spring-semester-fee (January-June, 2021) through online mode</a><br><br>
+           <a href="#">Revised Time Table for Spring Semester-2021, Department of Chemistry and Chemical Sciences</a><br><br>
+           <a href="#">Time Table for online classes of M.Sc Zoology (2nd & 4th Semester), Department of Animal Sciences</a><br><br>
+           <a href="#">Time Table for M.A History (2nd Semester) Session-2021</a><br><br>
+           <a href="#">Datesheet of Mid Term Examination of M.Sc Zoology (4th Semester), department pf Animal Sciences</a><br><br>
+           <a href="#">List of Courses offered to MCA (2nd Semester), Department of Computer Science</a><br><br>
+           <a href="#">Final Round, 2nd Selection list of PG Women Students Hostel-February, 2021</a><br><br>
+           <a href="#">Final Round, 1st Selection list of PG Women Students Hostel-February, 2021</a><br><br>
+           <a href="#">Revised Date Sheet for End Term Examination of PG students (1st Semester)</a><br><br>
+           <a href="#">Datesheet of End Term Examination (ONLINE MODE) of MCA in School of Computer Science (MCA session 2020) </a><br><br>
+           <a href="#">Invitation for 15 Days online Yoga Camp organized by the Yog Dhara Club</a><br><br>
+           <a href="#">Reappear Exam Result of 2nd Sem M.Sc Environmental Sciences (Academic Year 2020-2021), December 2020 held in January 2021</a><br><br>
+           <a href="#">Time Table for online classes of 2nd Semester MA (New Media)</a><br><br>
+           <a href="#">Online Documentation Verification of Provisionally addmitted students for Admission to MBA</a><br><br>
+           <a href="#">Notice for submission of spring-semester-fee (January-June, 2021) through online mode</a><br><br>
+           <a href="#">Revised Time Table for Spring Semester-2021, Department of Chemistry and Chemical Sciences</a><br><br>
+           <a href="#">Time Table for online classes of M.Sc Zoology (2nd & 4th Semester), Department of Animal Sciences</a><br><br>
+           <a href="#">Time Table for M.A History (2nd Semester) Session-2021</a><br><br>
+           <a href="#">Datesheet of Mid Term Examination of M.Sc Zoology (4th Semester), department pf Animal Sciences</a><br><br>
+           <a href="#">List of Courses offered to MCA (2nd Semester), Department of Computer Science</a><br><br>
+           <a href="#">Final Round, 2nd Selection list of PG Women Students Hostel-February, 2021</a><br><br>
+           <a href="#">Final Round, 1st Selection list of PG Women Students Hostel-February, 2021</a><br><br>
+           <a href="#">Revised Date Sheet for End Term Examination of PG students (1st Semester)</a><br><br>
+           </marquee>
+           <h2 style="background-color:greenyellow;color:red;text-align:center;padding:3px;">USEFUL LINKS</h2>
+               <a href="#" style="color:black; font-size:20px;">Annnouncements</a><br><br>
+               <a href="#" style="color:black; font-size:20px;">Online Application</a><br><br>
+               <a href="#" style="color:black; font-size:20px;">News</a><br><br>
+               <a href="#" style="color:black; font-size:20px;">Downloads</a><br><br>
+               <a href="#" style="color:black; font-size:20px;">Ranking</a><br><br>
+               <a href="#" style="color:black; font-size:20px;">Anti Ragging Helpline</a><br><br>
        </div>
-       <div id="g">
+       <div id="about">
            about
        </div>
-       <div id="h">
+       <div id="optional">
            optional
        </div>
-       <div id="i">
+       <div id="photogallery">
            Photo Gallery
        </div>
-       <div id="j">
+       <div id="footer">
            footer
        </div>
 </body>
