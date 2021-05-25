@@ -9,8 +9,25 @@
         #a
         {
         height:130px;
+        border-style: solid;
         border-style:solid;
-        border-color:black;
+        border-color:maroon;
+        background-color:maroon;
+        text-align: center;
+        font-size: 20px;
+        color: lawngreen;
+        }
+        .pal
+        {
+            height: 130px;
+            width: 250px;
+            float:left;
+        }
+        .ak
+        {
+            height: 130px;
+            width: 250px;
+            float:right; 
         }
 
         #b
@@ -24,8 +41,8 @@
         {    
         height:40px;
         border-style:solid;
-        border-color:lightskyblue;
-        background-color:lightskyblue;
+        border-color:yellow;
+        background-color:yellow;
         font-size:8px;
         text-align:center;
         padding-top:2px;
@@ -38,7 +55,7 @@ ul li
 {
     text-align: center;
 font-size:22px;
-color:red;
+color:green;
 font-family:serif;
 margin-bottom:5px;
 padding-top:2px;
@@ -55,6 +72,11 @@ color:maroon;
 border-color:red 5px;
 }
 
+ul li a {
+    text-decoration:none;
+    color:orangered;
+}
+
 li p
 {
 text-decoration:none;
@@ -65,8 +87,7 @@ color:#fff;
         {
         height:400px;
         border-style:solid;
-        border-color:black;
-        overflow-hidden;
+        border-color:white;
         }
         #rr{
         position:centre;
@@ -76,7 +97,7 @@ color:#fff;
         background-image: url("IMAGE1.jpg");
         background-size:100% 100%;
     
-        animation:slider 8s infinite linear;   
+        animation:slider 9s infinite linear;   
         }
         @keyframes slider{
         0%{background-image:url("IMAGE22.jpg");} 
@@ -85,7 +106,7 @@ color:#fff;
         }
        #e
         {
-        height:600px;
+        height:660px;
         width:25%;
         float:left;
         border-style:solid;
@@ -94,22 +115,34 @@ color:#fff;
 
         #f
         {
-        height:600px;
+        height:660px;
         width:25%;
         float:right;
         border-style:solid;
-        border-color:black;
+        border-color:honeydew;
+        background-color:honeydew;
+        }  
+        marquee a
+        {
+            text-decoration:none;
+            color:green;
+            background-color:yellow;
+        }
+        marquee a:hover
+        {
+            color:red;
         }
 
         #g
         {
-        height:600px;
+        height:660px;
         width:49%;
         border-style:solid;
-        border-color:black;
+        border-color:yellowgreen;
         margin-left:25.1%;
-        }
-
+        background-color:yellowgreen;
+        text-align:center;
+     }
         #h
         {
         height:80px;
@@ -135,8 +168,12 @@ color:#fff;
 </head>
 <body>
     <div id="a">
-        header
-    </div>
+        <img src="university-logo.png" class="pal">
+        <img src="university-logo.png" class="ak">
+     <h1><i>A.B UNIVERSITY</i></h1>
+     <h5>HIMACHAL PRADESH, INDIA </h5>
+     
+        </div>
         <div id="b">
             <marquee behavior="scroll" scrollamount="13" loop="infinite" direction="left" style="color:red" font size="30px"><i><b>!!! WELCOME TO A.B.UNIVERSITY !!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!!! THANKS FOR VISITING !!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!!! VISIT US AGAIN !!!</b></i></marquee>
         </div>
@@ -152,33 +189,63 @@ color:#fff;
         </div>
        <div id="d">
         <div id="rr">
-           slider
+           
        </div> 
        <div id="e">
            left buttons
        </div>
        <div id="f">
-           notice board
+        <h2 style="background-color:greenyellow;color:red;text-align:center;padding:3px;">NOTICES AND EVENTS</h2>
+        <marquee behavior="scroll" scrollamount="1.5" loop="infinite" direction="up" height="200px">
+        <a href="#">Datesheet of End Term Examination (ONLINE MODE) of MCA in School of Computer Science (MCA session 2020) </a><br><br>
+        <a href="#">Invitation for 15 Days online Yoga Camp organized by the Yog Dhara Club</a><br><br>
+        <a href="#">Reappear Exam Result of 2nd Sem M.Sc Environmental Sciences (Academic Year 2020-2021), December 2020 held in January 2021</a><br><br>
+        <a href="#">Time Table for online classes of 2nd Semester MA (New Media)</a><br><br>
+        <a href="#">Online Documentation Verification of Provisionally addmitted students for Admission to MBA</a><br><br>
+        <a href="#">Notice for submission of spring-semester-fee (January-June, 2021) through online mode</a><br><br>
+        <a href="#">Revised Time Table for Spring Semester-2021, Department of Chemistry and Chemical Sciences</a><br><br>
+        <a href="#">Time Table for online classes of M.Sc Zoology (2nd & 4th Semester), Department of Animal Sciences</a><br><br>
+        <a href="#">Time Table for M.A History (2nd Semester) Session-2021</a><br><br>
+        <a href="#">Datesheet of Mid Term Examination of M.Sc Zoology (4th Semester), department pf Animal Sciences</a><br><br>
+        <a href="#">List of Courses offered to MCA (2nd Semester), Department of Computer Science</a><br><br>
+        <a href="#">Final Round, 2nd Selection list of PG Women Students Hostel-February, 2021</a><br><br>
+        <a href="#">Final Round, 1st Selection list of PG Women Students Hostel-February, 2021</a><br><br>
+        <a href="#">Revised Date Sheet for End Term Examination of PG students (1st Semester)</a><br><br>
+        <a href="#">Datesheet of End Term Examination (ONLINE MODE) of MCA in School of Computer Science (MCA session 2020) </a><br><br>
+        <a href="#">Invitation for 15 Days online Yoga Camp organized by the Yog Dhara Club</a><br><br>
+        <a href="#">Reappear Exam Result of 2nd Sem M.Sc Environmental Sciences (Academic Year 2020-2021), December 2020 held in January 2021</a><br><br>
+        <a href="#">Time Table for online classes of 2nd Semester MA (New Media)</a><br><br>
+        <a href="#">Online Documentation Verification of Provisionally addmitted students for Admission to MBA</a><br><br>
+        <a href="#">Notice for submission of spring-semester-fee (January-June, 2021) through online mode</a><br><br>
+        <a href="#">Revised Time Table for Spring Semester-2021, Department of Chemistry and Chemical Sciences</a><br><br>
+        <a href="#">Time Table for online classes of M.Sc Zoology (2nd & 4th Semester), Department of Animal Sciences</a><br><br>
+        <a href="#">Time Table for M.A History (2nd Semester) Session-2021</a><br><br>
+        <a href="#">Datesheet of Mid Term Examination of M.Sc Zoology (4th Semester), department pf Animal Sciences</a><br><br>
+        <a href="#">List of Courses offered to MCA (2nd Semester), Department of Computer Science</a><br><br>
+        <a href="#">Final Round, 2nd Selection list of PG Women Students Hostel-February, 2021</a><br><br>
+        <a href="#">Final Round, 1st Selection list of PG Women Students Hostel-February, 2021</a><br><br>
+        <a href="#">Revised Date Sheet for End Term Examination of PG students (1st Semester)</a><br><br>
+        </marquee>
+        <h2 style="background-color:greenyellow;color:red;text-align:center;padding:3px;">USEFUL LINKS</h2>
+            <a href="#" style="color:black; font-size:20px;">Annnouncements</a><br><br>
+            <a href="#" style="color:black; font-size:20px;">Online Application</a><br><br>
+            <a href="#" style="color:black; font-size:20px;">News</a><br><br>
+            <a href="#" style="color:black; font-size:20px;">Downloads</a><br><br>
+            <a href="#" style="color:black; font-size:20px;">Ranking</a><br><br>
+            <a href="#" style="color:black; font-size:20px;">Anti Ragging Helpline</a><br><br>
+            <a href="#" style="color:black; font-size:20px;">Dean of Studies</a><br><br>
        </div>
-       <div id="g"><B>WELCOME TO AB UNIVERSITY</B>
-        <p><b><u>The Institution of Eminence status, accorded to the university in September 2019, is a recognition of UoH’s standing, ability and potential to move into the league of the world’s best institutions.
-
-         With the additional funding, autonomy and support from the Government of India, we are positioned and mandated to figure in the World’s 500 Best Universities in the next few years.
-         
-         The university’s application, weighed and scrutinised thoroughly for its administrative, academic, financial plans, was prepared through a three-month consultative and deliberative process across all Schools and Departments of the University.
+       <div id="g"><h3>WELCOME TO AB UNIVERSITY</h3><img src= "IMAGE3.jpg" height="150px" width="450px">
+         <br><p><b><u>The Institution of Eminence status, accorded to the university in September 2019, is a recognition of UoH’s standing, ability and potential to move into the league of the world’s best institutions.
+        With the additional funding, autonomy and support from the Government of India, we are positioned and mandated to figure in the World’s 500 Best Universities in the next few years.
+        The university’s application, weighed and scrutinised thoroughly for its administrative, academic, financial plans, was prepared through a three-month consultative and deliberative process across all Schools and Departments of the University.
          
          outreach activities, capacity-building measures from its faculty. Proposals have been invited for new projects, ideally interdisciplinary and innovative, from faculty.</p><b></u>
          <br>
          The University Grants Commission has granted Grade-I autonomy to University of Hyderabad for maintaining high academic standards. 
 
-The autonomy provides University of Hyderabad greater autonomy in 
-academic, administrative, and financial matters.
-
-Reacting to the honour, Vice-Chancellor, Prof. Appa Rao Podile thanked students, faculty, and administrative staff for their consistent efforts that enabled the University to become one of the top universities in the country.
-
 “I am acutely aware that this greater autonomy comes with the weight of responsibilities and expectations. The University of Hyderabad, through its teaching, research, and outreach activities, has been 
-constantly setting high standards for itself. While we can justifiably take pride in what we have achieved so far, this new recognition should serve as an incentive to work even harder to achieve global benchmarks 
-of excellence in higher education,” he added.
+constantly setting high standards for itself. 
 
 “There are no doubt challenges ahead, including mobilizing resources, offering competitive postgraduate and research programmes, and attracting the best academic talent, while not losing sight of the public 
 university’s social responsibilities
@@ -187,7 +254,7 @@ to social justice and equity,” he said.
 <br><br> 
 <b>Awarded top grade of A ***** by NAAC
 The University opted for a rigorous evaluation by the National Assessment and Accreditation Council (NAAC) of the University Grants Commission. The apex Council of NAAC awarded the top grade of A ***** to the University (on a five-point scale A* to A*****).</b>
-           about
+           
        </div>
        <div id="h">
            optional
