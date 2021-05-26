@@ -6,28 +6,43 @@
     <meta name="viewport" content="width=hey, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        #a
+        #header
         {
-        height:130px;
-        border-style: solid;
-        border-style:solid;
-        border-color:maroon;
-        background-color:maroon;
+        height:100px;
+        background-color:rgb(11, 11, 70);
+        color:rgb(253, 1, 1);
+        border: rgb(11, 11, 70) 5px solid;
+        }
+        .left
+        {
+        border-radius:50%;
+        height: 100px;
+        width: 120px;
+        position:absolute;
+        }
+        .right
+        {
+        border-radius:50%;
+        height: 100px;
+        width: 120px;  
+        position: absolute;
+        right: 13px;
+        top: 13px; 
+        }
+        .head
+        { 
+        position: relative; 
+        bottom:40px;
         text-align: center;
-        font-size: 20px;
-        color: lawngreen;
+        font-size: 55px;
         }
-        .pal
+        .loc
         {
-            height: 130px;
-            width: 250px;
-            float:left;
-        }
-        .ak
-        {
-            height: 130px;
-            width: 250px;
-            float:right; 
+            position: relative; 
+        bottom:90px;
+        text-align: right;
+        font-size: 30px;
+        color:aqua  
         }
 
         #b
@@ -37,57 +52,74 @@
         background-color:greenyellow;
         }
 
-        #c
-        {    
-        height:40px;
-        border-style:solid;
-        border-color:yellow;
-        background-color:yellow;
-        font-size:8px;
-        text-align:center;
-        padding-top:2px;
-        padding-bottom:2px;
-        padding-right:2px;
-        padding-left:2px;
-        }
+        .c
+{
+background:#000033;
+height:55px;
+border-style: solid;
+border-color: #000033;
+box-sizing: border-box;
+text-align: center;
+}
+
+ul
+{
+list-style:none;
+padding: 2px;
+margin:0px;
+position:absolute;
+}
 
 ul li
 {
-    text-align: center;
-font-size:22px;
-color:green;
-font-family:serif;
-margin-bottom:5px;
-padding-top:2px;
-padding-bottom:2px;
-padding-right:2px;
-padding-left:2px;
-display:inline-block;
-list-style-type:none;
+float:left;
+margin-top:2px;
 }
 
-ul li a:hover
+ul li a
 {
-color:maroon;
-border-color:red 5px;
-}
-
-ul li a {
-    text-decoration:none;
-    color:orangered;
-}
-
-li p
-{
+width:220px;
+color:white;
+display:block;
 text-decoration:none;
-color:#fff;
+font-size:20px;
+text-align:center;
+padding:10px;
+border-radius:10px;
+font-family:serif;
+font-weight:bold;
+}
+
+a:hover
+{
+background:#669900;
+}
+
+ul li ul
+{
+background:#000033;
+}
+
+ul li ul li
+{
+float:none;
+}
+
+ul li ul
+{
+display:none;
+}
+
+ul li:hover ul
+{
+display:block;
 }
 
        #d
         {
         height:400px;
         border-style:solid;
-        border-color:black;
+        border-color:white;
         }
         #rr{
         position:centre;
@@ -106,7 +138,7 @@ color:#fff;
         }
        #e
         {
-        height:600px;
+        height:660px;
         width:25%;
         float:left;
         border-style:solid;
@@ -115,7 +147,7 @@ color:#fff;
 
         #f
         {
-        height:600px;
+        height:660px;
         width:25%;
         float:right;
         border-style:solid;
@@ -135,20 +167,15 @@ color:#fff;
 
         #g
         {
-        height:600px;
+        height:660px;
         width:49%;
         border-style:solid;
-        border-color:black;
+        border-color:yellowgreen;
         margin-left:25.1%;
-        background-color:aqua;
+        background-color:yellowgreen;
         text-align:center;
      }
-        #h
-        {
-        height:80px;
-        border-style:solid;
-        border-color:black;
-        }
+    
 
         #i
         {
@@ -157,39 +184,63 @@ color:#fff;
         border-color:black;
         }
 
-        #j
-        {
-        height:130px;
-        border-style:solid;
-        border-color:black;
-        }
-
+        
         </style>
 </head>
 <body>
-    <div id="a">
-        <img src="university-logo.png" class="pal">
-        <img src="university-logo.png" class="ak">
-     <h1><i>A.B UNIVERSITY</i></h1>
-     <h5>HIMACHAL PRADESH, INDIA </h5>
-     
+    <div id="header">
+        <img src="logo.jpg" class="left">
+        <img src="logo.jpg" class="right">
+    <h1 class="head"><i><b>SHARK UNIVERSITY LAHAUL AND SPITI</b></i></h1>
+        <h5 class="loc">HIMACHAL PRADESH, INDIA&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h5>
         </div>
         <div id="b">
             <marquee behavior="scroll" scrollamount="13" loop="infinite" direction="left" style="color:red" font size="30px"><i><b>!!! WELCOME TO A.B.UNIVERSITY !!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!!! THANKS FOR VISITING !!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!!! VISIT US AGAIN !!!</b></i></marquee>
         </div>
-        <div id="c">
-                <ul><b>
-                <li><a href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><a href="#">Faculty</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><a href="#">Examination</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><a href="#">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><a href="#">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                </b></ul>
+
+        <div class="c">
+            <ul>
+            <li><a href="#">Home</a></li>
+            
+            <li><a href="#">Departments</a>
+            <ul>
+            <li><a href="#">Computer Science</a></li>
+            <li><a href="#">Commerce</a></li>
+            <li><a href="#">Humanities</a></li>
+            <li><a href="#">Business Administration</a></li>
+            <li><a href="#">Science</a></li>
+            </ul>
+            </li>
+            
+            <li><a href="#">Courses</a>
+            <ul>
+            <li><a href="#">BBA</a></li>
+            <li><a href="#">BCA</a></li>
+            <li><a href="#">B.A</a></li>
+            <li><a href="#">B.Sc</a></li>
+            <li><a href="#">B.Com</a></li>
+            <li><a href="#">MBA</a></li>
+            <li><a href="#">MCA</a></li>
+            <li><a href="#">M.A</a></li>
+            <li><a href="#">M.Sc</a></li>
+            <li><a href="#">M.Com</a></li>
+            </ul>
+            </li>
+            
+            <li><a href="#">Examinations</a>
+                <ul>
+            <li><a href="#">Undergraduate</a></li>
+            <li><a href="#">Postgraduate</a></li>
+            </ul>
+        </li>
+        
+            <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
+            
        <div id="d">
         <div id="rr">
-           slider
+           
        </div> 
        <div id="e">
            left buttons
@@ -233,8 +284,9 @@ color:#fff;
             <a href="#" style="color:black; font-size:20px;">Downloads</a><br><br>
             <a href="#" style="color:black; font-size:20px;">Ranking</a><br><br>
             <a href="#" style="color:black; font-size:20px;">Anti Ragging Helpline</a><br><br>
+            <a href="#" style="color:black; font-size:20px;">Dean of Studies</a><br><br>
        </div>
-       <div id="g"><B>WELCOME TO AB UNIVERSITY</B><img src= "IMAGE3.jpg" height="150px" width="500px">
+       <div id="g"><h3>WELCOME TO AB UNIVERSITY</h3><img src= "IMAGE3.jpg" height="150px" width="450px">
          <br><p><b><u>The Institution of Eminence status, accorded to the university in September 2019, is a recognition of UoH’s standing, ability and potential to move into the league of the world’s best institutions.
         With the additional funding, autonomy and support from the Government of India, we are positioned and mandated to figure in the World’s 500 Best Universities in the next few years.
         The university’s application, weighed and scrutinised thoroughly for its administrative, academic, financial plans, was prepared through a three-month consultative and deliberative process across all Schools and Departments of the University.
@@ -255,14 +307,45 @@ to social justice and equity,” he said.
 The University opted for a rigorous evaluation by the National Assessment and Accreditation Council (NAAC) of the University Grants Commission. The apex Council of NAAC awarded the top grade of A ***** to the University (on a five-point scale A* to A*****).</b>
            
        </div>
-       <div id="h">
-           optional
-       </div>
+       
        <div id="i">
            Photo Gallery
        </div>
-       <div id="j">
-           footer
-       </div>
+       
+       <footer class="footer">
+           <div class="container">
+               <div class="row">
+                   <div class="footer-col">
+                       <h4>Apply Here</h4>
+                           <a href="#">Admissions</a><br>
+                           <a href="#">Online Admission</a><br>
+                           <a href="#">Admission Office</a><br>
+                           <a href="#">Course Fee Details</a><br>
+                           <a href="#">Pay Fee Online</a><br>
+                           <a href="#">Scholarship</a><br>
+                           <a href="#">Student Feedback</a><br>
+                           <a href="#">FAQ</a><br>
+                   </div>
+
+                   <div class="footer-col">
+                    <h4>Others</h4>
+                        <a href="#">Hostels</a><br>
+                        <a href="#">Transport</a><br>
+                        <a href="#">Sports</a><br>
+                        <a href="#">Cultural Activities</a><br>
+                        <a href="#">Libraries</a><br>
+                        <a href="#">Student Welfare</a><br>
+                        <a href="#">Anti-Ragging Committee</a><br>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="Social Links">
+                        <a herf="#"></i></a>
+                    </div>
+                </div>
+               </div>
+           </div>
+       </footer>
     </body>
 </html>
