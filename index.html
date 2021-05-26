@@ -37,50 +37,67 @@
         background-color:greenyellow;
         }
 
-        #c
-        {    
-        height:40px;
-        border-style:solid;
-        border-color:yellow;
-        background-color:yellow;
-        font-size:8px;
-        text-align:center;
-        padding-top:2px;
-        padding-bottom:2px;
-        padding-right:2px;
-        padding-left:2px;
-        }
+        .c
+{
+background:#000033;
+height:55px;
+border-style: solid;
+border-color: #000033;
+box-sizing: border-box;
+text-align: center;
+}
+
+ul
+{
+list-style:none;
+padding: 2px;
+margin:0px;
+position:absolute;
+}
 
 ul li
 {
-    text-align: center;
-font-size:22px;
-color:green;
-font-family:serif;
-margin-bottom:5px;
-padding-top:2px;
-padding-bottom:2px;
-padding-right:2px;
-padding-left:2px;
-display:inline-block;
-list-style-type:none;
+float:left;
+margin-top:2px;
 }
 
-ul li a:hover
+ul li a
 {
-color:maroon;
-border-color:red 5px;
-}
-
-ul li a {
-    text-decoration:none;
-    color:orangered;
-}
-
-li p
-{
+width:220px;
+color:white;
+display:block;
 text-decoration:none;
-color:#fff;
+font-size:20px;
+text-align:center;
+padding:10px;
+border-radius:10px;
+font-family:serif;
+font-weight:bold;
+}
+
+a:hover
+{
+background:#669900;
+}
+
+ul li ul
+{
+background:#000033;
+}
+
+ul li ul li
+{
+float:none;
+}
+
+ul li ul
+{
+display:none;
+}
+
+ul li:hover ul
+{
+display:block;
 }
 
        #d
@@ -143,12 +160,7 @@ color:#fff;
         background-color:yellowgreen;
         text-align:center;
      }
-        #h
-        {
-        height:80px;
-        border-style:solid;
-        border-color:black;
-        }
+    
 
         #i
         {
@@ -157,13 +169,7 @@ color:#fff;
         border-color:black;
         }
 
-        #j
-        {
-        height:130px;
-        border-style:solid;
-        border-color:black;
-        }
-
+        
         </style>
 </head>
 <body>
@@ -177,16 +183,47 @@ color:#fff;
         <div id="b">
             <marquee behavior="scroll" scrollamount="13" loop="infinite" direction="left" style="color:red" font size="30px"><i><b>!!! WELCOME TO A.B.UNIVERSITY !!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!!! THANKS FOR VISITING !!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;!!! VISIT US AGAIN !!!</b></i></marquee>
         </div>
-        <div id="c">
-                <ul><b>
-                <li><a href="#">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><a href="#">Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><a href="#">Faculty</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><a href="#">Examination</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><a href="#">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><a href="#">Contact Us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                </b></ul>
+
+        <div class="c">
+            <ul>
+            <li><a href="#">Home</a></li>
+            
+            <li><a href="#">Departments</a>
+            <ul>
+            <li><a href="#">Computer Science</a></li>
+            <li><a href="#">Commerce</a></li>
+            <li><a href="#">Humanities</a></li>
+            <li><a href="#">Business Administration</a></li>
+            <li><a href="#">Science</a></li>
+            </ul>
+            </li>
+            
+            <li><a href="#">Courses</a>
+            <ul>
+            <li><a href="#">BBA</a></li>
+            <li><a href="#">BCA</a></li>
+            <li><a href="#">B.A</a></li>
+            <li><a href="#">B.Sc</a></li>
+            <li><a href="#">B.Com</a></li>
+            <li><a href="#">MBA</a></li>
+            <li><a href="#">MCA</a></li>
+            <li><a href="#">M.A</a></li>
+            <li><a href="#">M.Sc</a></li>
+            <li><a href="#">M.Com</a></li>
+            </ul>
+            </li>
+            
+            <li><a href="#">Examinations</a>
+                <ul>
+            <li><a href="#">Undergraduate</a></li>
+            <li><a href="#">Postgraduate</a></li>
+            </ul>
+        </li>
+        
+            <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
+            
        <div id="d">
         <div id="rr">
            
@@ -256,14 +293,45 @@ to social justice and equity,” he said.
 The University opted for a rigorous evaluation by the National Assessment and Accreditation Council (NAAC) of the University Grants Commission. The apex Council of NAAC awarded the top grade of A ***** to the University (on a five-point scale A* to A*****).</b>
            
        </div>
-       <div id="h">
-           optional
-       </div>
+       
        <div id="i">
            Photo Gallery
        </div>
-       <div id="j">
-           footer
-       </div>
+       
+       <footer class="footer">
+           <div class="container">
+               <div class="row">
+                   <div class="footer-col">
+                       <h4>Apply Here</h4>
+                           <a href="#">Admissions</a><br>
+                           <a href="#">Online Admission</a><br>
+                           <a href="#">Admission Office</a><br>
+                           <a href="#">Course Fee Details</a><br>
+                           <a href="#">Pay Fee Online</a><br>
+                           <a href="#">Scholarship</a><br>
+                           <a href="#">Student Feedback</a><br>
+                           <a href="#">FAQ</a><br>
+                   </div>
+
+                   <div class="footer-col">
+                    <h4>Others</h4>
+                        <a href="#">Hostels</a><br>
+                        <a href="#">Transport</a><br>
+                        <a href="#">Sports</a><br>
+                        <a href="#">Cultural Activities</a><br>
+                        <a href="#">Libraries</a><br>
+                        <a href="#">Student Welfare</a><br>
+                        <a href="#">Anti-Ragging Committee</a><br>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="Social Links">
+                        <a herf="#"></i></a>
+                    </div>
+                </div>
+               </div>
+           </div>
+       </footer>
     </body>
 </html>
